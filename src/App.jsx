@@ -1,24 +1,12 @@
-// src/App.tsx
 import { useState, useEffect } from "react";
 import { supabase } from "./lib/supabaseClient";
 import "./App.css";
 
-// The to-do list item will have an ID number and a description of the thing to do (text string)
-interface Todo {
-	id: number;
-	text: string;
-}
-
 function App() {
-	// State for the list of todos — typed as an array of Todo objects
-	const [todos, setTodos] = useState<Todo[]>([]);
-
-	// State for the input field — TypeScript infers this as string
+	const [todos, setTodos] = useState([]);
 	const [inputValue, setInputValue] = useState("");
-
 	const [loading, setLoading] = useState(true);
 
-	// when the page loads, fetch todos
 	useEffect(() => {
 		fetchTodos();
 	}, []);
