@@ -6,6 +6,7 @@
 	--red: #de3c4b;
 	--yellow: #e0aa38;
 	--gray: #bbac99;
+	--gray-dark: #83786a;
 }
 
 body {
@@ -26,13 +27,13 @@ h1 {
 	font-family: "Arial Black", Arial, Helvetica, sans-serif;
 }
 
-.todo-form {
+.yarn-form {
 	display: flex;
 	gap: 0.5rem;
 	margin-bottom: 1.5rem;
 }
 
-.todo-form input {
+.yarn-form input {
 	flex: 1;
 	padding: 0.6rem 0.8rem;
 	font-size: 1rem;
@@ -41,11 +42,11 @@ h1 {
 	outline: none;
 }
 
-.todo-form input:focus {
+.yarn-form input:focus {
 	border-color: var(--yellow);
 }
 
-.todo-form button {
+.yarn-form button {
 	padding: 0.6rem 1.2rem;
 	background: var(--purple);
 	color: white;
@@ -55,16 +56,16 @@ h1 {
 	cursor: pointer;
 }
 
-.todo-form button:hover {
+.yarn-form button:hover {
 	background: var(--pink);
 }
 
-.todo-list {
+.yarn-list {
 	list-style: none;
 	padding: 0;
 }
 
-.todo-item {
+.yarn-item {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -72,14 +73,23 @@ h1 {
 	border-bottom: 2px solid var(--gray);
 }
 
-.delete-btn {
-	background: var(--red);
+.btn {
+	background: var(--gray);
 	color: white;
 	border: none;
 	padding: 0.35rem 0.75rem;
 	border-radius: 4px;
 	cursor: pointer;
 	font-size: 0.85rem;
+	margin: 0 0.25rem;
+}
+
+.btn:hover {
+	background: var(--gray-dark);
+}
+
+.delete-btn {
+	background: var(--red);
 }
 
 .delete-btn:hover {
