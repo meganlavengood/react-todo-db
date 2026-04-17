@@ -1,10 +1,4 @@
-// This component handles both sign-up and sign-in.
-// It manages five pieces of state:
-// email and password for the form inputs,
-// loading to disable the button while a request is in flight,
-// error to display error messages,
-// and isSignUp to toggle between sign-up and sign-in modes.
-// The handleSubmit function conditionally calls either signUp or signInWithPassword depending on which mode we’re in.
+// This component handles both sign-up and sign-in. It manages five pieces of state: email and password for the form inputs, loading to disable the button while a request is in flight, error to display error messages, and isSignUp to toggle between sign-up and sign-in modes. The handleSubmit function conditionally calls either signUp or signInWithPassword depending on which mode we’re in.
 
 import { useState } from "react";
 import { supabase } from "./lib/supabaseClient";
