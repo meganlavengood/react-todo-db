@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { supabase } from "./lib/supabaseClient";
-import Auth from "./Auth";
+import Auth from "./auth";
 import "./App.css";
 
 function App() {
